@@ -38,25 +38,4 @@ else:
         print(rules.get((user_choice, computer_choice), "Invalid result!"))
 
 
-import random
-
-user_choice = int(input("enter ur choice: 0 rock,1 sci 2 paper"))
-
-if(user_choice>=3 or user_choice<0):
-    print("u lose")
-else:
-    print(user_choice)
-    computer_choice = random.randint(0,2)
-    print("computer choice:",computer_choice)
-
-    if(computer_choice == user_choice):
-        print("draw")
-    elif(computer_choice > user_choice):
-        print("computer wins")
-    elif(user_choice > computer_choice):
-        print("user wins")
-    elif(computer_choice == 0 and user_choice == 2):
-        print("computer win")
-    elif(user_choice == 0 and computer_choice == 2):
-        print("user win")
 
